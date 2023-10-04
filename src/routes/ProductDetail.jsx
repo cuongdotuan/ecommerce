@@ -56,13 +56,7 @@ const ProductDetail = () => {
     return <img className='w-full' key={index} src={img} alt="" onClick={() => handleChangeImage(index)} />
   })
 
-  const data = [1, 2, 3, 4, 5]
-  const newData = data.map(n => {
-    if (n === 3) {
-      return 0
-    }
-    return n
-  })
+
 
   const addToCart = () => {
     const foundProduct = cart.find(p => p.id === product.id)
